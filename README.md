@@ -29,8 +29,7 @@ A Power has many Heros through HeroPower
 A HeroPower belongs to a Hero and belongs to a Power
 Start by creating the models and migrations for the following database tables:
 
-php
-Copy code
+
 Heroes
   name: string
   super_name: string
