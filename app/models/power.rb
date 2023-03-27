@@ -1,8 +1,8 @@
-class HeroPower < ApplicationRecord
-   #hero power relations
-    belongs_to :hero
-    belongs_to :power
+
+class Power < ApplicationRecord
+    has_many :hero_powers
+    has_many :heroes, through: :hero_powers
 
     validates :description, presence: true
     validates :description, length: { minimum: 20 }
-  end
+end
